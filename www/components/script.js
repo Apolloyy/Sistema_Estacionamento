@@ -35,7 +35,9 @@ if(horas <= 3 && horas > 0) {
 
     } else {
         document.getElementById('resultado').innerHTML = "O Limite de horas são 3.";
+        navigator.vibrate(1000);
     }
+    navigator.vibrate(1000);
 }
 
 function NovaCompra()
@@ -45,4 +47,5 @@ function NovaCompra()
     document.getElementById('resultado').innerHTML = "";
     document.getElementById('categoria').value = 'Selecione';
     alert("Faça mais uma compra!");
+    navigator.vibrate(2000);
 }
