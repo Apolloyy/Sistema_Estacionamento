@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <script src="components/script.js"></script>
+    <div class="container">
+
+    <div class="primeirotxt">
+        <h1 class="sistema">Sistema de Estacionamento</h1>
+        <h3 class="PedroFerrari">MUNICIPAL</h3>
+    </div> 
+
+    <div class="tabela">
+        <table>
+                <tr>
+                    <td>Categoria</td>
+                    <td>Taxa por hora</td>
+                </tr>
+                <tr>
+                    <td>Subcompacto</td>
+                    <td>R$3,50</td>
+                </tr>
+                <tr>
+                    <td>Compacto</td>
+                    <td>R$4,00</td>
+                </tr>
+                <tr>
+                    <td>Hatch</td>
+                    <td>R$4,50</td>
+                </tr>
+                <tr>
+                    <td>Sedan</td>
+                    <td>R$5,00</td>
+                </tr>
+                <tr>
+                    <td>SUV</td>
+                    <td>R$6,00</td>
+                </tr>
+                <tr>
+                    <td>Pick-up</td>
+                    <td>R$7,00</td>
+                </tr>
+        </table>
+    </div>
+
+    <div class="inputs">
+        <select name="selecione a categoria" id="categoria" aria-placeholder="Selecione">
+            <option value="valor0" selected disabled>Selecione</option>
+            <option value="Subcompacto">Subcompacto</option>
+            <option value="Compacto">Compacto</option>
+            <option value="Hatch">Hatch</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Pick-up">Pick-up</option>
+        </select>
+        <input type="text" id="placa" placeholder="Digite a placa do carro">
+        <input type="number" id="horas" placeholder="Digite quantas horas deseja alugar">
+
+
+    </div>
+
+    <div class="buttons">
+        <input type="button" onclick="Alugar()" value="Enviar" id="btnenviar">
+        <input type="reset" onclick="NovaCompra()"value="Nova Compra" id="refresh">
+    </div>
+    
+    <div id="resultado">
+        
+    </div>
+</div>
+</body>
+</html>

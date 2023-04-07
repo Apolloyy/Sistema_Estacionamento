@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fffef9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 750px;
+    border: 3px solid #181818;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.primeirotxt{
+    margin-top: -5rem;
+}
+.sistema{
+    text-align: center;
+    padding: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-family: Delicious Handrawn, sans-serif;
+    font-weight: 100;
+}
+.PedroFerrari{
+    text-align: center;
+    font-size: medium;
+    margin-top: 0.5rem;
+    font-family: IMB Plex Sans, sans-serif;
+}
+.tabela {
+    margin: 2rem;
+    font-family: IMB Plex Sans, sans-serif;
+    border-collapse: collapse;
+} 
+td,th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#placa::placeholder{
+    font-size: 15px;
+}
+#horas::placeholder{
+    font-size: 15px;
+}
+
+select, #horas, #placa{
+    margin: 0.2rem;
+    padding: 0.1rem;
+    border: 2px solid black;
+    border-radius: none;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    background-color: white;
+} 
+
+#btnenviar, #refresh{
+    background-color: #6d6d6d;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 5rem;
+    padding: 0.5rem 0.3rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+}
+
+#refresh {
+    width: 8rem;
+}
+
+#btnenviar:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+#resultado {
+    font-size: 18px;
+    color: #181818;
+    font-family: IMB Plex Sans, sans-serif;
+    padding-top: 1.3rem;
+}
+
+.buttons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width:1000px){
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: 80vh;
+        border: 1px solid #181818;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .primeirotxt{
+        margin-top: -3rem;
+        font-size: 17.5px;
+    }
+
+    .tabela {
+        margin: 0.5rem;
+        font-family: IMB Plex Sans, sans-serif;
+        border-collapse: collapse;
+    } 
+
+    td,th {
+        border: 0.8px solid black;
+        text-align: center;
+        padding: 4px;
+    }
+
+    select, #horas, #placa{
+        margin: 0.2rem;
+        padding: 0.1rem;
+        border: 2px solid black;
+        border-radius: none;
+        width: 90%;
+        max-width: 400px;
+        font-size: 16px;
+        background-color: white;
+    } 
+
+    #btnenviar, #refresh{
+        background-color: #6d6d6d;
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        width: 5.5rem;
+        padding: 0.25rem 0.15rem;
+        border: 1px solid black;
+        border-radius: 50px;
+        transition: background-color 0.3s;
+        margin-top: 0.5rem;
+    }
+
+    #refresh {
+        width: 6rem;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #fffef9;
+    }
+}
+
