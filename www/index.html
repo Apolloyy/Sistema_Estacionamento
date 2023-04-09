@@ -1,14 +1,13 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="components/loader.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento</title>
     <link rel="stylesheet" href="css/style.css">
-
-</head>
+    
+</head> 
 <body>
     <script src="components/script.js"></script>
     <div class="container">
@@ -52,7 +51,7 @@
     </div>
 
     <div class="inputs">
-        <select name="selecione a categoria" id="categoria" aria-placeholder="Selecione">
+        <select required name="selecione a categoria" id="categoria" aria-placeholder="Selecione">
             <option value="valor0" selected disabled>Selecione</option>
             <option value="Subcompacto">Subcompacto</option>
             <option value="Compacto">Compacto</option>
@@ -61,8 +60,8 @@
             <option value="SUV">SUV</option>
             <option value="Pick-up">Pick-up</option>
         </select>
-        <input type="text" id="placa" placeholder="Digite a placa do carro">
-        <input type="number" id="horas" placeholder="Digite quantas horas deseja alugar">
+        <input required type="text" id="placa" placeholder="Digite a placa do carro">
+        <input required type="number" id="horas" placeholder="Digite quantas horas deseja alugar">
 
 
     </div>
